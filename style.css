@@ -1,0 +1,102 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: your-chosen-fonts;
+    color: white;
+    background-color: #212121;
+}
+
+.sidebar {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    background-color: #2f2f2f;
+    /* Other styling as needed */
+}
+
+.main-container {
+    margin-left: 10%; /* Allocate space for the sidebar */
+    width: 90%; /* Remaining space */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* In case content is larger than the container */
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-list li {
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 5px; /* Add rounded corners to list items */
+    margin-bottom: 5px; /* Add space between list items */
+}
+
+.project-list li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px; /* Smaller font size */
+    /* Add a background for the text fading effect */
+    background: linear-gradient(to right, white 80%, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Hide the original text color */
+}
+
+.project-list li a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%; /* Adjust the width of the fade effect */
+    background: inherit; /* Use the same background as the parent */
+    pointer-events: none;
+}
+
+/* Rest of your CSS */
+
+
+.project-list li:hover {
+    background-color: #3a3a3a;
+}
+
+
+.main-content {
+    margin-left: 10%; /* Same as the sidebar width */
+    width: 80%; /* Fill the rest of the horizontal space */
+    padding: 20px;
+    transition: margin-left 0.5s, width 0.5s; /* Smooth transition for resizing */
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    left: 10%; /* Same as the initial width of the sidebar */
+    z-index: 1000; /* Ensures the button is above other elements */
+    transition: left 0.5s; /* Smooth transition for the button */
+}
+
+#toggle-btn {
+    cursor: pointer;
+    background-color: #2f2f2f00; /* Match with sidebar color */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Update sidebar transition for smooth sliding */
+.sidebar {
+    width: 10%; /* Set sidebar width to 10% */
+    transition: width 0.5s;
+}
+
