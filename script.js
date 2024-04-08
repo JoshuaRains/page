@@ -19,6 +19,6 @@ document.getElementById('wheel').addEventListener('click', function() {
     document.getElementById('content-frame').src = 'wheelIPA.html';
 });
 
-document.getElementById('link-page2').addEventListener('click', function() {
-    document.getElementById('content-frame').src = 'page2.html';
+document.getElementById('IPAVowelsEssay').addEventListener('click', function() {
+    document.getElementById('content-frame').src = 'IPAVowelsEssay.html';
 });
