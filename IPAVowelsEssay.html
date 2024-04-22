@@ -1,80 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Article Page</title>
+    <meta charset="UTF-8">
+    <title>Research on Spanish Vowel Sounds</title>
     <style>
         body {
             font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             margin: 0;
-            padding: 0;
+            padding: 20px;
             background-color: #212121;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
-
         .article {
-            width: 60%; /* Adjust the width as needed */
-            max-width: 800px; /* Maximum width */
-            background-color: #2f2f2f;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            max-width: 800px;
+            margin: auto;
         }
-
-        h1 {
-            font-size: 2em;
+        h1, h2 {
+            text-align: center;
         }
+        figure {
+            text-align: center;
+            
+        }
+        figcaption {
+            margin-top: 5px;
+        }
+        audio {
+            display: block;
+            margin: 20px auto;
+            width: 90%;
+        }
+        .audio-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Space between the audio controls */
+    flex-wrap: wrap;  /* Allows the elements to wrap if space is insufficient */
+}
 
-        p {
-            line-height: 1.6;
+.audio-group div {
+    text-align: center;
+    flex-grow: 1;  /* Allows each div to grow and use available space */
+    flex-basis: 0;  /* Start with zero width, grow as needed */
+    min-width: 250px;  /* Minimum width for each audio clip, adjust as needed */
+}
+
+
+
+        .spectograms {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="article">
-        <h1>Article Title</h1>
+        <h1>Introduction</h1>
         <p>
-    In this study I will be analyzing the sound production of myself and a native speaker of the Mexican variety of Spanish. I will record myself speaking both English and my non-native language of Spanish to determine how my sound production differs from the target speaker whose accent I wish to adopt into my own speaking. In my reflection I will compare my vowel production between English and Spanish and compare my Spanish vowel production to that of the native speaker. The speaker I have selected is a twitch streamer who provides longform content which will give plenty of acoustic data to contribute to this study.
-</p>
+            In this study I will be analyzing the sound production of myself and native speakers of the Mexican variety of Spanish. I will record myself speaking both English and my non-native language of Spanish to determine how my sound production differs from the target speakers whose accent I wish to adopt into my own speaking. In my reflection I will compare my vowel production between English and Spanish and compare my Spanish vowel production to that of the native speaker. One speaker I have selected is a female twitch streamer from Guadalajara, Jalisco, Mexico who provides longform content which will give plenty of acoustic data to contribute to this study. The other speaker comes from a website that seeks to archive the different accents of the Spanish speaking world. This speaker is a male also from Mexico.
+        </p>
+        <br>
+        <h2>Observations about the vowels of the native speakers</h2>
+        <figure>
+            <img src="NativeComparison.svg" alt="Vowel Space Chart" width="100%">
+            <figcaption>Figure 1: Vowel Space Comparison</figcaption>
+        </figure>
+        <br>
+        <p>Following a similar pattern present in English (), it appears that the male speaker of Spanish uses less of his overall available vowel space than his female counterpart. This can be seen in figure 1. This is especially apparent, as the /i/ and /e/ are much closer together than would be ideal for maintaining ease of understanding.  
 
-<p>
-    I started by taking a section of one of the recordings of the native speaker and getting the average formants for each of the vowels present in Spanish which are identified as /a/, /e/, /i/, /o/, and /u/ (Munoz-Basols chap. 2). I then took samples of my own speech, using the same words as well as additional words to get data on my own production of those Spanish vowel sounds. Then I mapped out the sounds in my native phonetic inventory for English.
-</p>
+        </p>
+        <br>
+        
 
-<p>
-    From the chart we can observe a few things. My Spanish /u/ sound is very close to that of the native speaker. This sound is probably one of the easier ones for me to replicate due to its proximity to the /ʊ/ from the phonetic inventory of my native language.
-</p>
+        <h2>Observations on my Spanish Vowels</h2>
+        <figure>
+            <img src="overalllabeled.svg" alt="Vowel Space Chart" width="100%">
+            <figcaption>Figure 2: Vowel Placement Comparison</figcaption>
+        </figure>
+        <br>
 
-<p>
-    A similar phenomenon occurs with my Spanish /e/ sound which I produce very closely to the /ɪ/ sound from English, this however distances me from the native speaker. This difference may not inhibit understanding because my /e/ and /i/ of Spanish remain a good distance apart.
-</p>
+        <p>
+            From the figure 2 we can observe a few things. My Spanish /u/ sound is very close to that of the female native speaker. This sound is probably one of the easier ones for me to replicate due to its proximity to the /ʊ/ from the phonetic inventory of my native language.
+        </p>
+        <p>
+            A similar phenomenon occurs with my Spanish /e/ sound which I produce very closely to the /ɪ/ sound from English. This places it near where I would predict that the male /e/ sound would appear, following the pattern of reducing overall vowel space used in the mouth in comparison with the female speaker. It does, however, appear more raised than expected in the male speaker.  
+        </p>
+        <p>
+            The /i/ sound is also fairly close to those of the native speakers, appearing nicely in-between them. It also appears that when speaking Spanish I attempt to bring the /i/ further back than in English. 
+        </p>
+        <p>
+            The most obvious difference between my vowels and those of the native speaker are /o/ and /a/. While my /o/ can be seen as remotely close to the target, being too fronted, but still being in-between the two native speakers, I was shocked to find that the /a/ is being produced among the back rounded vowels.  
+        </p>
+        <p>
+            These observations present a few areas that I need to work on to sound more like a native speaker. I should use my English /ʌ/ phoneme as a model for producing the Spanish /o/ as it is almost identical to the native speaker’s /o/ sound. I should also start using my English /æ/ sound as a model for the /a/ sound, as this would put it exactly between the two native speakers.  
+        </p>
 
-<p>
-    The /i/ sound is also fairly close to that of the native speaker. It also appears that when speaking Spanish I attempt to bring the /i/ further back than in English.
-</p>
-
-<p>
-    The most obvious difference between my vowels and those of the native speaker are /o/ and /a/. While my /o/ can be seen as remotely close to the target, being too fronted, I was shocked to find that the /a/ is being produced among the back rounded vowels.
-</p>
-
-<p>
-    These observations present a few areas that I need to work on to sound more like a native speaker. I should use my English /ʌ/ phoneme as a model for producing the Spanish /o/ as it is almost identical to the native speaker’s /o/ sound. I should also start using my English /æ/ sound as a model for the /a/ sound, attempting to lower it as much as possible.
-</p>
-
-
-        <!-- Audio Clip -->
-        <audio controls>
-            <source src="calidad.wav" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <h2>Consonants</h2>
+        <p>
+            The most obvious places of comparison between the consonants that I produce and those of the native speakers are the endings of certain words. In word /kaliðað/ for example the native speaker leaves off the final consonant. This is something not present in my speech, where the /ð/ is clearly pronounced [kaliðað], [kaliðaː].
+        </p>
+        <div class="audio-group">
+            <div>
+                <p>Me - [kaliðað]</p>
+                <audio controls>
+                    <source src="Josh_Calidad.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div>
+                <p>Native Speaker - [kaliðaː]</p>
+                <audio controls>
+                    <source src="calidad.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        
+        <p>
+            When producing approximant clusters, it also appears that I do not separate the sounds as much as native speakers. This can be seen the following figure which compares the spectogram of my pronunciation of /lograrlo/ with that of the female native speaker.  
+        </p>
+        
+        <div class="audio-group">
+            <div>
+                
+                <img src="liquidarlo_mine.svg" alt="Spectogram of Lograrlo"  width="100%">
+                <audio controls>
+                    <source src="liquidarlo_mine.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Figure 4: My pronunciation of /likiðaɾlo/</p>
+            </div>
+            
+        </div>
+        <br>
+        <br>
+        <div class="audio-group">
+            <div>
+                
+                <img src="liquidarlo_native.svg" alt="Spectogram Comparison" width="100%">
+                <audio controls>
+                    <source src="liquidarlo.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Figure 5: Native pronunciation of /likiðaɾlo/</p>
+            </div>
+        </div>
 
         <h2>Works Cited:</h2>
-<p>
-    Munoz-Basols, J., Moreno, N., Inma, T., & Lacorte, M. (2016). <em>Introduccion a la linguistica hispanica actual: Teoria y practica</em>. Routledge.
-</p>
-
+        <p>
+            Munoz-Basols, J., Moreno, N., Inma, T., & Lacorte, M. (2016). <em>Introduccion a la linguistica hispanica actual: Teoria y practica</em>. Routledge.
+        </p>
+    </div>
 </body>
 </html>
