@@ -1,25 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Compact Resume</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			color: #333;
+			background-color: #fff;
+			font-size: 12px;
+		}
+		.container {
+			width: 95%;
+			margin: auto;
+			padding: 10px;
+			max-width: 800px;
+		}
+		h1 {
+			text-align: center;
+			font-size: 1.5em;
+			margin-bottom: 5px;
+		}
+		.header, .section {
+			display: flex;
+			align-items: center;
+			border-bottom: 1px solid #ccc;
+			padding: 5px 0;
+		}
+		.header i, .section i {
+			margin-right: 5px;
+			color: #555;
+		}
+		.profile, .details, .skills, .languages, .education, .experience, .extracurricular {
+			margin-top: 5px;
+		}
+		.section-content {
+			margin-left: 25px;
+		}
+		.skills ul, .languages ul, .experience ul, .extracurricular ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+		.skills ul li, .languages ul li, .experience ul li, .extracurricular ul li {
+			margin: 2px 0;
+		}
+		.language-level {
+			font-weight: bold;
+			color: #666;
+		}
+	</style>
 </head>
 <body>
-    <div class="sidebar">
-        <ul class="project-list">
-            <!-- Placeholder for projects; you can replace these with actual content later -->
-            <div class="sidebar-toggle">
-                <button id="toggle-btn">&#9776;</button> <!-- Unicode for menu icon -->
-            </div>
-            <li><a href="#Wheel" id="wheel">Wheel of Rains</a></li>
-            <li><a href="#Essay" id="IPAVowelsEssay">Essay</a></li>
-            <!-- Add more projects here -->
-        </ul>
-    </div>
-    <div class="main-container">
-        <iframe src="IPAVowelsEssay.html" id="content-frame" width="100%" height="100%"></iframe>
-    </div>
 
-    <script src="script.js"></script>
+<div class="container">
+	<h1>Joshua Rains</h1>
+	<div class="header">
+		<i class="fas fa-envelope"></i><span>Email: joshuar836771@gmail.com</span>
+		<i class="fas fa-phone" style="margin-left: 15px;"></i><span>Phone: (931) 205-4791</span>
+		<i class="fas fa-map-marker-alt" style="margin-left: 15px;"></i><span>Location: Shelbyville, TN</span>
+	</div>
+
+	<!-- Profile Section -->
+	<div class="section">
+		<i class="fas fa-user"></i><h2 style="font-size: 1em; margin: 0;">Profile</h2>
+	</div>
+	<div class="section-content">
+		<p>Motivated foreign language teacher with experience in creating engaging learning environments. Skilled in using technology to support language acquisition, with advanced proficiency in Spanish.</p>
+	</div>
+
+    <!-- Teaching Experience Section -->
+	<div class="section">
+		<i class="fas fa-chalkboard-teacher"></i><h2 style="font-size: 1em; margin: 0;">Teaching Experience</h2>
+	</div>
+	<div class="section-content">
+
+		<p><strong>Residency I</strong>, Rockvale High School (2024)</p>
+		<ul>
+			<li>Developed beginner and intermediate Spanish lessons.</li>
+            <li>With the support of the substitute and other Spanish teachers, instructed students during the teacher's extended leave of absence.</li>
+			<li>Utilized current best practices to provide quality instruction.</li>
+		</ul>
+
+        <p><strong>Activity Organizer</strong>, Linguistics Olympiad, MTSU (2023, 2024)</p>
+		<ul>
+			<li>Taught an introductory lesson to foster student interest in linguistics.</li>
+            <li>Assisted in managing groups of students.</li>
+		</ul>
+
+        <p><strong>Class Observations</strong>, Oakland High School, Blackman High School, Siegel High School</p>
+		<ul>
+			<li>Investigated different classroom management styles.</li>
+			<li>Developed and taught lessons with high school teachers.</li>
+		</ul>
+	</div>
+
+    <!-- Languages Section -->
+	<div class="section">
+		<i class="fas fa-language"></i><h2 style="font-size: 1em; margin: 0;">Spanish Proficiency (ACTFL)</h2>
+	</div>
+	<div class="section-content">
+		<ul>
+			<li>Reading - <span class="language-level"> Advanced High</span></li>
+            <li>Listening - <span class="language-level"> Advanced High</span></li>
+            <li>Writing - <span class="language-level"> Advanced Low</span></li>
+            <li>Speaking - <span class="language-level"> Intermediate High</span></li>
+			
+		</ul>
+	</div>
+
+	
+
+	<!-- Skills Section -->
+	<div class="section">
+		<i class="fas fa-tools"></i><h2 style="font-size: 1em; margin: 0;">Skills</h2>
+	</div>
+	<div class="section-content">
+		<ul>
+			<li>Proficient in using HTML, CSS, JavaScript, and Python to create learning tools and games.</li>
+            <li>Able to use generative AI to quickly design student handouts.</li>
+            <li>Knowledgeable in a large variety of creative fields.</li>
+		</ul>
+	</div>
+
+	
+
+	<!-- Education Section -->
+	<div class="section">
+		<i class="fas fa-graduation-cap"></i><h2 style="font-size: 1em; margin: 0;">Education</h2>
+	</div>
+	<div class="section-content">
+		<p><strong>B.S. in Spanish</strong>, MTSU (in progress)</p>
+		<ul>
+			<li>Minors: Linguistics and Secondary Education</li>
+			<li>GPA: 4.0</li>
+		</ul>
+	</div>
+
+	
+
+	
+
+	<!-- Work Experience Section -->
+	<div class="section">
+		<i class="fas fa-briefcase"></i><h2 style="font-size: 1em; margin: 0;">Work Experience</h2>
+	</div>
+	<div class="section-content">
+		<p><strong>Family Business</strong>, Bearvue Artworks, (2020 - present)</p>
+		<ul>
+            <li>Maintained high levels of attention to detail to ensure the quality of products.</li>
+            <li>Solved technical problems to improve efficiency.</li>
+            <li>Managed the production and distribution of products in the absence of the owner.</li>
+		</ul>
+	</div>
+
+
+</div>
+
 </body>
 </html>
